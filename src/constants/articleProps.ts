@@ -150,7 +150,7 @@ export const backgroundColors: OptionType[] = [
 export const contentWidthArr: OptionType[] = [
 	{
 		title: 'Широкий',
-		value: '1394px',
+		value: '1600px',
 		className: 'width-wide',
 		optionClassName: 'option-wide',
 	},
