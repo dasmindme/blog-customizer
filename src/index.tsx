@@ -17,6 +17,7 @@ const domNode = document.getElementById('root') as HTMLDivElement;
 const root = createRoot(domNode);
 
 const App = () => {
+	// Состояние, в котором хранятся текущие параметры оформления статьи
 	const [articleState, setArticleState] =
 		useState<ArticleStateType>(defaultArticleState);
 	return (
