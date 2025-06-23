@@ -113,7 +113,12 @@ export const ArticleParamsForm = ({ onApply }: ArticleParamsFormProps) => {
 					[styles.container_open]: isMenuOpen,
 				})}
 				ref={asideRef}>
-				<form className={styles.form} onSubmit={(e) => e.preventDefault()}>
+				<form
+					className={styles.form}
+					onSubmit={(e) => {
+						e.preventDefault();
+						handleApply();
+					}}>
 					<Text size={31} weight={800} uppercase>
 						Задайте параметры
 					</Text>
@@ -163,12 +168,7 @@ export const ArticleParamsForm = ({ onApply }: ArticleParamsFormProps) => {
 							type='clear'
 							onClick={handleReset}
 						/>
-						<Button
-							title='Применить'
-							htmlType='button'
-							type='apply'
-							onClick={handleApply}
-						/>
+						<Button title='Применить' htmlType='submit' type='apply' />
 					</div>
 				</form>
 			</aside>
