@@ -6,7 +6,11 @@
 	row-gap: 24px;
 	max-width: var(--container-width, auto);
 	margin: 0 auto;
-	padding: 72px 0 144px;
+	padding: 90px 0 144px;
+	color: var(--font-color, #000000);
+	font-size: var(--font-size, 18px);
+	font-family: var(--font-family, 'Open Sans');
+	background-color: var(--bg-color, #ffffff);
 }
 
 .titleDescription {
